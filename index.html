@@ -6,23 +6,254 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PizzaByte</title>
     <!-- bootstrap links -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- MD bootstrap Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
-    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow fixed-top">
+            <a class="navbar-brand" href="#">PizzaByte</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="">
+                <ul class="navbar-nav ml-auto" id="link">
+                    <li class="nav-item active">
+                        <a class="nav-link h5" href="#"><i class="fas fa-home"></i>Home
+                            <span class="sr-only"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h5" href="#"><i class="fas fa-pen"></i>AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h5 font-weight-bold " href="#"><i class="fas fa-pizza-slice"></i>Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h5" href="#"><i class="fas fa-pizza-slice"></i>Contact</a>
+                    </li>
+            </div>
+        </nav>
+        <div class="home">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ad1">
+                        <img class="d-block w-100 h-100" src="images/pizza1.jpg" id="slider-img" alt="First slide">
+                    </div>
+                    <div class="carousel-item ad2">
+                        <img class="d-block w-100" src="images/pizza3.jpg" id="slider-img" alt="Second slide">
+                    </div>
+                    <div class="carousel-item ad3">
+                        <img class="d-block w-100" src="images/pizza4.jpg" id="slider-img" alt="Third slide">
+                    </div>
+                    <div class="carousel-item ad4">
+                        <img class="d-block w-100" src="images/pizza6.jpg" id="slider-img" alt="forth slide">
+                    </div>
+                    <div class="carousel-item ad5">
+                        <img class="d-block w-100" src="images/pizza2.png" id="slider-img" alt="Fifth slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
 
-    <!-- js links -->
-    <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
-    <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
-    <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+        <div class="aboutUs">
+            <div class="card about-us">
+                <div class="card-body text-center">
+                    <h4 class="card-title"><strong>Abouts Us</strong></h4>
+                    <h6 class="font-weight-bold indigo-text py-2">Why PizzaByte?</h6>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+                        perspiciatis
+                        voluptatum a, quo nobis, non commodi quia repellendus sequi nulla voluptatem dicta
+                        reprehenderit, placeat
+                        laborum ut beatae ullam suscipit veniam.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima dolorum a dicta
+                        fugiat,
+                        asperiores nihil iusto quam eos explicabo voluptates voluptatibus tempora pariatur molestias
+                        repellendus esse excepturi aliquam. Incidunt!
 
+                    </p>
+                    </p>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="types">
+
+            <!-- Card deck -->
+            <div class="card-deck">
+
+                <!-- Card -->
+                <div class="card mb-4">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="images/pizza8.jpg" alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!--Title-->
+                        <h4 class="card-title">Card title</h4>
+                        <!--Text-->
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+
+                <!-- Card -->
+                <div class="card mb-4">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="images/pizza9.png" alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!--Title-->
+                        <h4 class="card-title">Card title</h4>
+                        <!--Text-->
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+
+                <!-- Card -->
+                <div class="card mb-4">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="images/pizza10.jpg" alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!--Title-->
+                        <h4 class="card-title">Card title</h4>
+                        <!--Text-->
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+
+            </div>
+            <!-- Card deck -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- MD bootstrap Cdn -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+    <script src="https://cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js"></script>
+    <!-- js link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
