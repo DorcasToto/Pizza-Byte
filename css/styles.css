@@ -33,13 +33,17 @@ html{
 .ad5 {
     background: url(../images/pizza9.jpg) no-repeat center center fixed; 
 }
-.modal-dialog {
-    position: absolute;
-    top: 50px;
-    right: 100px;
-    bottom: 0;
-    left: 0;
-    z-index: 10040;
-    overflow: auto;
-    overflow-y: auto;
-  }
+
+  .map-container-5{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-5 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
