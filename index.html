@@ -97,8 +97,64 @@
         </div>
         <div class="types p-3">
             <h4 class="text-center"><strong>Our Varieties</strong></h4>
-            <p>PizzaByte got you covered by providing you different types of Pizza you need. These include:</p>
+            <p>PizzaByte got you covered by providing you different types of Pizza you need. Prices differ according to
+                sizes,toppings, type and crust.</p>
+            <p>Here is a summary of our prices</p>
             <div class="container">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">BBQ</th>
+                            <th scope="col">Peperoni</th>
+                            <th scope="col">Chicken</th>
+                            <th scope="col">Margherita</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Toppings</th>
+                            <td>Mushroom - 100<br>
+                                Periperi-120<br>
+                                Sausage-80</td>
+                            <td>Mushroom - 100<br>
+                                Periperi-120<br>
+                                Sausage-80
+                            <td>Mushroom - 100<br>
+                                Periperi-120<br>
+                                Sausage-80</td>
+                            <td>Mushroom - 100<br>
+                                Periperi-120<br>
+                                Sausage-80</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sizes</th>
+                            <td>Large - 1200<br>
+                                Medium-1100<br>
+                                Small-800</td>
+                            <td>Large - 1500<br>
+                                Medium-1300<br>
+                                Small-900</td>
+                            <td>Large - 2000<br>
+                                Medium-1500<br>
+                                Small-1300</td>
+                            <td>Large - 1000<br>
+                                Medium-800<br>
+                                Small-500</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Crust</th>
+                            <td>Thick-150</br>
+                                Thin-100</td>
+                            <td>Thick-150</br>
+                                Thin-100</td>
+                            <td>Thick-150</br>
+                                Thin-100</td>
+                            <td>Thick-150</br>
+                                Thin-100</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <div class="row">
                     <div class="col-sm mt-3">
                         <div class="card">
@@ -141,7 +197,8 @@
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">Hawaaian</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card'content.</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card'content.</p>
                             </div>
                             <div class="text-center">
                                 <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
@@ -157,7 +214,8 @@
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">Margherita Pizza</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card'scontent.</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card'scontent.</p>
                             </div>
                             <div class="text-center">
                                 <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
@@ -176,7 +234,7 @@
                 <div class="modal fade " id="modalContactForm" tabindex="-1" role="dialog"
                     aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-sm" role="document">
-                        <!--Content-->
+                        <!--Contettnt-->
                         <div class="modal-content">
 
                             <!--Header-->
@@ -190,44 +248,44 @@
                             <!--Body-->
                             <form id="pizza-form">
                                 <div class="form-group">
-                                  <label for="size">Size</label>
-                                  <select class="form-control" id="size" required>
-                                    <option value="">...</option>
-                                    <option value="large">Large</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="small">Small</option>
-                                  </select>
+                                    <label for="size">Size</label>
+                                    <select class="form-control" id="size" required>
+                                        <option value="">...</option>
+                                        <option value="large">Large</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="small">Small</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
-                                  <label for="topping">Topping</label>
-                                  <select class="form-control" id="topping" required>
-                                    <option value="">...</option>
-                                    <option value="mushroom">Mushroom</option>
-                                    <option value="pepperoni">Pepperoni</option>
-                                    <option value="sausage">Sausage</option>
-                                  </select>
+                                    <label for="topping">Topping</label>
+                                    <select class="form-control" id="topping" required>
+                                        <option value="">...</option>
+                                        <option value="mushroom">Mushroom</option>
+                                        <option value="pepperoni">Pepperoni</option>
+                                        <option value="sausage">Sausage</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
-                                  <label for="crust">Crust</label>
-                                  <select class="form-control" id="crust" required>
-                                    <option value="">...</option>
-                                    <option value="thick">Thick</option>
-                                    <option value="thin">Thin</option>
-                                  </select>
+                                    <label for="crust">Crust</label>
+                                    <select class="form-control" id="crust" required>
+                                        <option value="">...</option>
+                                        <option value="thick">Thick</option>
+                                        <option value="thin">Thin</option>
+                                    </select>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Add</button>
-                              </form>
-                            </div>
+                            </form>
                         </div>
-                        <!--/.Content-->
                     </div>
+                    <!--/.Content-->
                 </div>
-
             </div>
+
         </div>
+    </div>
 
     </div>
-    
+
 
     <footer class="page-footer font-small blue-grey darken-1 m-3">
         <div class="container">
