@@ -5,19 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PizzaByte</title>
-    <!-- bootstrap links -->
-    <!-- MD bootstrap Cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
-    <link href="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
@@ -80,124 +79,205 @@
         <div class="aboutUs">
             <div class="card h-100">
                 <div class="card-body text-center">
-                    <h4 class="card-title"><strong>Abouts Us</strong></h4>
-                    <h6 class="font-weight-bold indigo-text py-2">Why PizzaByte?</h6>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+                    <h4><strong>Abouts Us</strong></h4>
+                    <p class="about"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
                         perspiciatis
                         voluptatum a, quo nobis, non commodi quia repellendus sequi nulla voluptatem dicta
                         reprehenderit, placeat
                         laborum ut beatae ullam suscipit veniam.
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima dolorum a dicta
-                        fugiat,
-                        asperiores nihil iusto quam eos explicabo voluptates voluptatibus tempora pariatur molestias
-                        repellendus esse excepturi aliquam. Incidunt!
-                    </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima dolorum a dicta
+                            fugiat,
+                            asperiores nihil iusto quam eos explicabo voluptates voluptatibus tempora pariatur molestias
+                            repellendus esse excepturi aliquam. Incidunt!
+                        </p>
                     </p>
                 </div>
             </div>
         </div>
+        <div class="types p-3">
+            <h4 class="text-center"><strong>Our Varieties</strong></h4>
+            <div class="container">
 
-        <div class="types">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="view overlay">
-                            <img class="card-img-top mask rgba-white-slight" src="images/pizza10.jpg" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="view overlay">
-                            <img class="card-img-top mask rgba-white-slight" src="images/pizza10.jpg" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
+                <p>PizzaByte got you covered by providing you different types of Pizza you need. These include:</p>
+                <div class="row">
+                    <div class="col-sm mt-3">
+                        <div class="card">
+                            <div class="view overlay">
+                                <img class="card-img-top" src="images/pizza7.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">BBQ Pizza</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's
+                                    content.</p>
+                            </div>
+                            <div class="text-center">
+                                <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
+                                    data-target="#modalContactForm">Place your Order</a>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-sm">
+                        <div class="card mt-3">
+                            <div class="view overlay">
+                                <img class="card-img-top" src="images/pizza7.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Pepperoni Pizza</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                            <div class="text-center">
+                                <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
+                                    data-target="#modalContactForm">Place your Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card mt-3">
+                            <div class="view overlay">
+                                <img class="card-img-top" src="images/pizza7.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Meat Pizza</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card'content.</p>
+                            </div>
+                            <div class="text-center">
+                                <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
+                                    data-target="#modalContactForm">Place your Order</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card mt-3">
+                            <div class="view overlay">
+                                <img class="card-img-top" src="images/pizza7.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Margherita Pizza</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card'scontent.</p>
+                            </div>
+                            <div class="text-center">
+                                <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
+                                    data-target="#modalContactForm">Place your Order</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="view overlay">
-                            <img class="card-img-top mask rgba-white-slight" src="images/pizza10.jpg" alt="Card image cap">
+
+            </div>
+        </div>
+        <hr>
+        <div class="order">
+            <div class="">
+                <div class="modal fade " id="modalContactForm" tabindex="-1" role="dialog"
+                    aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm" role="document">
+                        <!--Content-->
+                        <div class="modal-content">
+
+                            <!--Header-->
+                            <div class="modal-header light-blue darken-3 white-text">
+                                <h4 class="title"><i class="fas fa-pencil-alt"></i> Contact form</h4>
+                                <button type="button" class="close waves-effect waves-light" data-dismiss="modal"
+                                    aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <!--Body-->
+                            <div class="modal-body mb-0">
+                                <div class="md-form form-sm">
+                                    <i class="fas fa-envelope prefix active"></i>
+                                    <input type="text" id="form8" class="form-control">
+                                    <label for="form8" class="active">Your name</label>
+                                </div>
+
+                                <div class="md-form form-sm">
+                                    <i class="fas fa-lock prefix active"></i>
+                                    <input type="password" id="form9" class="form-control">
+                                    <label for="form9" class="active">Your email</label>
+                                </div>
+
+                                <div class="md-form form-sm">
+                                    <i class="fas fa-tag prefix"></i>
+                                    <input type="search" id="form-autocomplete-2" class="form-control mdb-autocomplete">
+                                    <button class="mdb-autocomplete-clear">
+                                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="https://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                    </button>
+                                    <label for="form-autocomplete-2" class="active">Subject</label>
+                                </div>
+
+                                <div class="md-form form-sm">
+                                    <i class="fas fa-pencil-alt prefix"></i>
+                                    <textarea type="text" id="form67" class="md-textarea mb-0"></textarea>
+                                    <label for="form67">Your message</label>
+                                </div>
+
+                                <div class="text-center mt-1-half">
+                                    <button class="btn btn-info mb-2 waves-effect waves-light">Send <i
+                                            class="fas fa-send ml-1"></i></button>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                        </div>
+                        <!--/.Content-->
                     </div>
                 </div>
 
             </div>
         </div>
+
     </div>
 
+    <footer class="page-footer font-small blue-grey darken-1 m-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 py-5">
+                    <div class="mb-5 flex-center">
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <a class="pin-ic">
+                            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="">PizzaByte</a>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- MD bootstrap Cdn -->
+    </footer>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js">
+    </script>
     <script src="https://cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js"></script>
-    <!-- js link -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
