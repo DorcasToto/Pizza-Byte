@@ -1,10 +1,10 @@
 // Material Select Initialization
 $(document).ready(function () {
     $("#table1").hide();
-    $('#del').click(function () {
-        $(this).remove();
-    });
-   
+    $("#bill").hide();
+
+    var totalCost = 0;
+    var pizzaOrdered = [];
 
     function Pizza(type, size, topping, crust) {
         this.type = type;
@@ -12,22 +12,12 @@ $(document).ready(function () {
         this.topping = topping;
         this.crust = crust;
     }
-    var pizza = new Pizza(typeSelected, sizeSelected, toppingSelected, crustSelected);
-    var typeSelected = $("#type").val();
-    var sizeSelected = $("#size").val();
-    var toppingSelected = $("#topping").val();
-    var crustSelected = $("#crust").val();
+
     Pizza.prototype.getPizzaPrice = function () {
         return this.getTypePrice() + this.getToppingPrice() + this.getCrustType();
     }
     Pizza.prototype.getSubTotal = function () {
-        var totalCost =0;
-        var pizzaOrdered = [];
-        pizzaOrdered.push(pizza);
-
-        for (var i = 0; i < total.length; i++) {
-        return  totalCost += pizzaOrdered[i].getPizzaPrice();
-          }
+        return totalCost;
     }
     Pizza.prototype.getTypePrice = function () {
         if (this.type === "BBQ") {
@@ -113,6 +103,11 @@ $(document).ready(function () {
         var crustSelected = $("#crust").val();
         var total = "";
         var pizza = new Pizza(typeSelected, sizeSelected, toppingSelected, crustSelected);
+
+        pizzaOrdered.push(pizza);
+
+        totalCost = totalCost + pizza.getPizzaPrice();
+
         $("#table").append(
             "<tr>" +
             '<td scope="row">' + "#" +
@@ -132,12 +127,24 @@ $(document).ready(function () {
             "<td>" +
             pizza.getPizzaPrice() +
             "</td>" +
+            "<td>" +
+            pizza.getSubTotal() +
+            "</td>" +
+            "<td>" +
+            "<button class='btn btn-danger me' id='del'>Delete </button>" +
+            "</td>" +
             "</tr>"
         );
-        $("#table1").show();
-    });
-    $("#checkout").click(function () {
-        alert(pizza.s)
+        $("#table1").slideDown(3000);
+
+        $("#checkout").click(function (e) {
+            e.preventDefault();
+            $("#billAmount").append(pizza.getSubTotal())
+            $("#bill").slideDown(3000);
+
+        });
+
+
     });
 
 });

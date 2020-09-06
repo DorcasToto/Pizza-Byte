@@ -66,3 +66,16 @@ html {
 h4{
   color:teal;;
 }
+
+
+.navbar {
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+#billAmount{
+  color: black;
+}
