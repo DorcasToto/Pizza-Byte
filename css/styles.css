@@ -31,3 +31,9 @@ html {
 .h5{
     color: blueviolet;
 }
+#menu{
+    background-color: cadetblue;
+}
+#tds>td{
+  font-size:20px;
+}

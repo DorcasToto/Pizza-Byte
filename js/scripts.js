@@ -1,51 +1,64 @@
 // Material Select Initialization
 $(document).ready(function () {
-    $('.mdb-select').materialSelect();
-    //pizza
 
-    class Pizza {
-        constructor(types, toppings, crust, size,total) {
-            this.types = types;
-            this.toppings = toppings;
-            this.crust = crust;
-            this.size = size;
-            this.total = total;
-
-        }
+    function Pizza(type, size, topping, crust) {
+        this.type = type;
+        this.size = size;
+        this.topping = topping;
+        this.crust = crust;
     }
 
     Pizza.prototype.getTypePrice = function () {
+        if (this.type === "BBQ") {
+            if (this.size === "large") {
+                return 1200
+            } else if (this.size === "medium")
+                return 1100
+            else {
+                return 800
 
-        var typeNames = {
-            name: ["BBQ", "Hawaaian", "ChickenTikka"]
-        };
-        var toppingNames = {
-            name: ["mushroom", "sausage","periperi"]
-        };
-        var crustNames = {
-            name: ["thick", "thin"]
-        };
-        var sizeNames = {
-            name: ["large", "medium", "small"]
-        };
-        sizeNames.name.forEach(function (sizeName) {
-            if (sizeName[0]) {
-                typeNames.name.forEach(function (typeName) {
-                    if (typeName[0])
-                        return this.types; 
-                })
-            } else if (sizeName[1]) {
-                typeNames.name.forEach(function (typeName) {
-                    if (typeName[0])
-                        return 1300;
-                })
-            } else {
-                return 1000;
+            }
+        } else if (this.type === "periperi") {
+            if (this.size === "large") {
+                return 1500
+            } else if (this.size === "medium")
+                return 1300
+            else {
+                return 900
+
             }
 
-        });
+        } else if (this.type === "hawaaian") {
+            if (this.size === "large") {
+                return 2000
+            } else if (this.size === "medium")
+                return 1500
+            else {
+                return 1300
 
+            }
+        }else{
+            if (this.size === "large") {
+                return 1000
+            } else if (this.size === "medium")
+                return 800
+            else {
+                return 500
+
+            }
+        }
     }
-    var pizz = new Pizza("BBQ", "mush", "thick", "small");
-    alert(pizz.getTypePrice());
+
+    // console.log(pizza.typeSelected);
+
+    $("#pizza-form").submit(function (e) {
+        e.preventDefault();
+        var typeSelected = $("#type").val();
+        var sizeSelected = $("#size").val();
+        var toppingSelected = $("#topping").val();
+        var crustSelected = $("#crust").val();
+        var pizza = new Pizza(typeSelected, sizeSelected, toppingSelected, crustSelected);
+        console.log(pizza.getTypePrice());
+    });
+
 });

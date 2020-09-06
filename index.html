@@ -13,7 +13,6 @@
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
@@ -22,7 +21,7 @@
 </head>
 
 <body>
-    <div class="">
+    <div class=" container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow fixed-top">
             <a class="navbar-brand" href="#">PizzaByte</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -97,64 +96,69 @@
         </div>
         <div class="types p-3">
             <h4 class="text-center"><strong>Our Varieties</strong></h4>
-            <p>PizzaByte got you covered by providing you different types of Pizza you need. Prices differ according to
-                sizes,toppings, type and crust.</p>
-            <p>Here is a summary of our prices</p>
             <div class="container">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">BBQ</th>
-                            <th scope="col">Peperoni</th>
-                            <th scope="col">Chicken</th>
-                            <th scope="col">Margherita</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Toppings</th>
-                            <td>Mushroom - 100<br>
-                                Periperi-120<br>
-                                Sausage-80</td>
-                            <td>Mushroom - 100<br>
-                                Periperi-120<br>
-                                Sausage-80
-                            <td>Mushroom - 100<br>
-                                Periperi-120<br>
-                                Sausage-80</td>
-                            <td>Mushroom - 100<br>
-                                Periperi-120<br>
-                                Sausage-80</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Sizes</th>
-                            <td>Large - 1200<br>
-                                Medium-1100<br>
-                                Small-800</td>
-                            <td>Large - 1500<br>
-                                Medium-1300<br>
-                                Small-900</td>
-                            <td>Large - 2000<br>
-                                Medium-1500<br>
-                                Small-1300</td>
-                            <td>Large - 1000<br>
-                                Medium-800<br>
-                                Small-500</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Crust</th>
-                            <td>Thick-150</br>
-                                Thin-100</td>
-                            <td>Thick-150</br>
-                                Thin-100</td>
-                            <td>Thick-150</br>
-                                Thin-100</td>
-                            <td>Thick-150</br>
-                                Thin-100</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p class="text-center">PizzaByte got you covered by providing you different types of Pizza you need.
+                    Prices differ according to sizes,toppings, type and crust.</p>
+                <p class="text-center">Here is a summary of our prices</p>
+                <div class="table-responsive" id="menu">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col" class="h3">BBQ</th>
+                                <th scope="col" class="h3">Periperi</th>
+                                <th scope="col" class="h3">Hawaaian</th>
+                                <th scope="col" class="h3">Margherita</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="h3" id="tds">Toppings</th>
+                                <td class="f-12">Mushroom - 100<br>
+                                    Peperoni-120<br>
+                                    Sausage-80</td>
+                                <td>Mushroom - 100<br>
+                                    Peperoni-120<br>
+                                    Sausage-80
+                                <td>Mushroom - 100<br>
+                                    Peperoni-120<br>
+                                    Sausage-80</td>
+                                <td>Mushroom - 100<br>
+                                    Peperoni-120<br>
+                                    Sausage-80</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="h3">Sizes</th>
+                                <td>Large - 1200<br>
+                                    Medium-1100<br>
+                                    Small-800</td>
+                                <td>Large - 1500<br>
+                                    Medium-1300<br>
+                                    Small-900</td>
+                                <td>Large - 2000<br>
+                                    Medium-1500<br>
+                                    Small-1300</td>
+                                <td>Large - 1000<br>
+                                    Medium-800<br>
+                                    Small-500</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="h3">Crust</th>
+                                <td>Thick-150</br>
+                                    Thin-100</td>
+                                <td>Thick-150</br>
+                                    Thin-100</td>
+                                <td>Thick-150</br>
+                                    Thin-100</td>
+                                <td>Thick-150</br>
+                                    Thin-100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="container">
                 <div class="row">
                     <div class="col-sm mt-3">
                         <div class="card">
@@ -162,15 +166,12 @@
                                 <img class="card-img-top" src="images/pizza7.jpg" alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">Chicken Ticker</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's
-                                    content.</p>
-                            </div>
-                            <div class="text-center">
-                                <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
-                                    data-target="#modalContactForm">Place your Order</a>
+                                <h3 class="card-title">Chicken BBQ</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's
+                                        content.</p>
                             </div>
                         </div>
                     </div>
@@ -180,14 +181,10 @@
                                 <img class="card-img-top" src="images/pizza7.jpg" alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">Periperi Chicken</h4>
+                                <h3 class="card-title">Periperi Chicken</h3>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk of the card's content.</p>
                             </div>
-                            <div class="text-center">
-                                <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
-                                    data-target="#modalContactForm">Place your Order</a>
-                            </div>
                         </div>
                     </div>
                     <div class="col-sm">
@@ -196,14 +193,10 @@
                                 <img class="card-img-top" src="images/pizza7.jpg" alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">Hawaaian</h4>
+                                <h3 class="card-title">Hawaaian</h3>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk of the card'content.</p>
                             </div>
-                            <div class="text-center">
-                                <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
-                                    data-target="#modalContactForm">Place your Order</a>
-                            </div>
                         </div>
                     </div>
 
@@ -213,17 +206,17 @@
                                 <img class="card-img-top" src="images/pizza7.jpg" alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">Margherita Pizza</h4>
+                                <h3 class="card-title">Margherita</h3>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk of the card'scontent.</p>
-                            </div>
-                            <div class="text-center">
-                                <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
-                                    data-target="#modalContactForm">Place your Order</a>
                             </div>
                         </div>
                     </div>
 
+                </div>
+                <div class="text-center" id="order">
+                    <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
+                        data-target="#modalContactForm">Place your Order</a>
                 </div>
 
             </div>
@@ -233,7 +226,7 @@
             <div class="">
                 <div class="modal fade " id="modalContactForm" tabindex="-1" role="dialog"
                     aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-dialog modal-lg" role="document">
                         <!--Contettnt-->
                         <div class="modal-content">
 
@@ -247,6 +240,15 @@
                             </div>
                             <!--Body-->
                             <form id="pizza-form">
+                                <div class="form-group">
+                                    <label for="size">Type</label>
+                                    <select class="form-control" id="type" required>
+                                        <option value="">...</option>
+                                        <option value="BBQ">BBQ</option>
+                                        <option value="periperi">Periperi</option>
+                                        <option value="hawaaian">Huwaaan</option>
+                                    </select>
+                                </div>
                                 <div class="form-group">
                                     <label for="size">Size</label>
                                     <select class="form-control" id="size" required>
@@ -284,7 +286,7 @@
         </div>
     </div>
 
-    </div>
+    
 
 
     <footer class="page-footer font-small blue-grey darken-1 m-3">
@@ -330,7 +332,6 @@
     <script src="https://cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
