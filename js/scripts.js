@@ -158,7 +158,10 @@ $(document).ready(function () {
                 '<button class="btn btn-primary pick">Pick Up</button>' +
                 '</div>' +
                 '<div class="col-4">' +
-                '<button class="btn btn-primary home">Home Delivery</button>' +
+                '<button class="btn btn-primary home' +
+                ' data-toggle="modal"' +
+                'data-toggle ="modal"'+
+                'data-target=#modalContactForm">Home Delivery</button>' +
                 '</div>' +
                 '<div class="col-4">' +
                 '<button class="btn btn-danger exit">Exit</button>' +
@@ -179,10 +182,10 @@ $(document).ready(function () {
 
 
             })
-            $(".home").click(function(){
+            $(".home").click(function () {
                 var name = $("#name").val();
                 var number = $("#phone").val();
-
+                var newTotal = totalCost += 200;
 
             })
         });
