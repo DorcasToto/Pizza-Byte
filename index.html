@@ -13,6 +13,7 @@
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
@@ -96,9 +97,64 @@
         </div>
         <div class="types p-3">
             <h4 class="text-center"><strong>Our Varieties</strong></h4>
+            <p>PizzaByte got you covered by providing you different types of Pizza you need. Prices differ according to
+                sizes,toppings, type and crust.</p>
+            <p>Here is a summary of our prices</p>
             <div class="container">
-
-                <p>PizzaByte got you covered by providing you different types of Pizza you need. These include:</p>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">BBQ</th>
+                            <th scope="col">Peperoni</th>
+                            <th scope="col">Chicken</th>
+                            <th scope="col">Margherita</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Toppings</th>
+                            <td>Mushroom - 100<br>
+                                Periperi-120<br>
+                                Sausage-80</td>
+                            <td>Mushroom - 100<br>
+                                Periperi-120<br>
+                                Sausage-80
+                            <td>Mushroom - 100<br>
+                                Periperi-120<br>
+                                Sausage-80</td>
+                            <td>Mushroom - 100<br>
+                                Periperi-120<br>
+                                Sausage-80</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sizes</th>
+                            <td>Large - 1200<br>
+                                Medium-1100<br>
+                                Small-800</td>
+                            <td>Large - 1500<br>
+                                Medium-1300<br>
+                                Small-900</td>
+                            <td>Large - 2000<br>
+                                Medium-1500<br>
+                                Small-1300</td>
+                            <td>Large - 1000<br>
+                                Medium-800<br>
+                                Small-500</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Crust</th>
+                            <td>Thick-150</br>
+                                Thin-100</td>
+                            <td>Thick-150</br>
+                                Thin-100</td>
+                            <td>Thick-150</br>
+                                Thin-100</td>
+                            <td>Thick-150</br>
+                                Thin-100</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <div class="row">
                     <div class="col-sm mt-3">
                         <div class="card">
@@ -106,7 +162,7 @@
                                 <img class="card-img-top" src="images/pizza7.jpg" alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">BBQ Pizza</h4>
+                                <h4 class="card-title">Chicken Ticker</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk
                                     of the card's
@@ -124,7 +180,7 @@
                                 <img class="card-img-top" src="images/pizza7.jpg" alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">Pepperoni Pizza</h4>
+                                <h4 class="card-title">Periperi Chicken</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk of the card's content.</p>
                             </div>
@@ -140,8 +196,9 @@
                                 <img class="card-img-top" src="images/pizza7.jpg" alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">Meat Pizza</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card'content.</p>
+                                <h4 class="card-title">Hawaaian</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card'content.</p>
                             </div>
                             <div class="text-center">
                                 <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
@@ -157,7 +214,8 @@
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">Margherita Pizza</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card'scontent.</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card'scontent.</p>
                             </div>
                             <div class="text-center">
                                 <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
@@ -176,66 +234,58 @@
                 <div class="modal fade " id="modalContactForm" tabindex="-1" role="dialog"
                     aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-sm" role="document">
-                        <!--Content-->
+                        <!--Contettnt-->
                         <div class="modal-content">
 
                             <!--Header-->
                             <div class="modal-header light-blue darken-3 white-text">
-                                <h4 class="title"><i class="fas fa-pencil-alt"></i> Contact form</h4>
+                                <h4 class="title"><i class="fas fa-pencil-alt"></i> Pizza Byte</h4>
                                 <button type="button" class="close waves-effect waves-light" data-dismiss="modal"
                                     aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
                             </div>
                             <!--Body-->
-                            <div class="modal-body mb-0">
-                                <div class="md-form form-sm">
-                                    <i class="fas fa-envelope prefix active"></i>
-                                    <input type="text" id="form8" class="form-control">
-                                    <label for="form8" class="active">Your name</label>
+                            <form id="pizza-form">
+                                <div class="form-group">
+                                    <label for="size">Size</label>
+                                    <select class="form-control" id="size" required>
+                                        <option value="">...</option>
+                                        <option value="large">Large</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="small">Small</option>
+                                    </select>
                                 </div>
-
-                                <div class="md-form form-sm">
-                                    <i class="fas fa-lock prefix active"></i>
-                                    <input type="password" id="form9" class="form-control">
-                                    <label for="form9" class="active">Your email</label>
+                                <div class="form-group">
+                                    <label for="topping">Topping</label>
+                                    <select class="form-control" id="topping" required>
+                                        <option value="">...</option>
+                                        <option value="mushroom">Mushroom</option>
+                                        <option value="pepperoni">Pepperoni</option>
+                                        <option value="sausage">Sausage</option>
+                                    </select>
                                 </div>
-
-                                <div class="md-form form-sm">
-                                    <i class="fas fa-tag prefix"></i>
-                                    <input type="search" id="form-autocomplete-2" class="form-control mdb-autocomplete">
-                                    <button class="mdb-autocomplete-clear">
-                                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24"
-                                            xmlns="https://www.w3.org/2000/svg">
-                                            <path
-                                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
-                                            <path d="M0 0h24v24H0z" fill="none" />
-                                        </svg>
-                                    </button>
-                                    <label for="form-autocomplete-2" class="active">Subject</label>
+                                <div class="form-group">
+                                    <label for="crust">Crust</label>
+                                    <select class="form-control" id="crust" required>
+                                        <option value="">...</option>
+                                        <option value="thick">Thick</option>
+                                        <option value="thin">Thin</option>
+                                    </select>
                                 </div>
-
-                                <div class="md-form form-sm">
-                                    <i class="fas fa-pencil-alt prefix"></i>
-                                    <textarea type="text" id="form67" class="md-textarea mb-0"></textarea>
-                                    <label for="form67">Your message</label>
-                                </div>
-
-                                <div class="text-center mt-1-half">
-                                    <button class="btn btn-info mb-2 waves-effect waves-light">Send <i
-                                            class="fas fa-send ml-1"></i></button>
-                                </div>
-
-                            </div>
+                                <button type="submit" class="btn btn-primary">Add</button>
+                            </form>
                         </div>
-                        <!--/.Content-->
                     </div>
+                    <!--/.Content-->
                 </div>
-
             </div>
+
         </div>
+    </div>
 
     </div>
+
 
     <footer class="page-footer font-small blue-grey darken-1 m-3">
         <div class="container">
