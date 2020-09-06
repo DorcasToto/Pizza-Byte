@@ -2,6 +2,8 @@
 $(document).ready(function () {
     $("#table1").hide();
     $("#bill").hide();
+    $("#homeDeliver").hide();
+    $(".show").hide();
 
     var totalCost = 0;
     var pizzaOrdered = [];
@@ -139,12 +141,50 @@ $(document).ready(function () {
 
         $("#checkout").click(function (e) {
             e.preventDefault();
-            $("#billAmount").append(pizza.getSubTotal())
-            $("#bill").slideDown(3000);
+            $("#checkout").prop("disabled", false);
+            $("#billAmount").empty();
+            $(".show").append('<div class="name">' +
+                '<div class="form-group">' +
+                '<label for="Full-name">Full name</label>' +
+                '<input type="text" class="form-control" id="name">' +
+                '</div>' +
+                '<div class="form-group">' +
+                '<label for="phone-no">Phone Number</label>' +
+                '<input type="number" class="form-control" id="phone">' +
+                '</div>' +
+                '<div class="form-group">' +
+                '<div class="row">' +
+                '<div class="col-4">' +
+                '<button class="btn btn-primary pick">Pick Up</button>' +
+                '</div>' +
+                '<div class="col-4">' +
+                '<button class="btn btn-primary home">Home Delivery</button>' +
+                '</div>' +
+                '<div class="col-4">' +
+                '<button class="btn btn-danger exit">Exit</button>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>');
+            // $("#billAmount").append(pizza.getSubTotal())
+            // $("#bill").slideDown(3000);
+            $(".show").slideDown(3000);
+            $("#checkout").prop("disabled", false);
+            $(".pick").click(function () {
+                var name = $("#name").val();
+                var number = $("#phone").val();
 
+                $("#billAmount").append("Hello " + name + " Thanks for Ordering with us. Your total orders is " + pizza.getSubTotal())
+                $("#bill").slideDown(3000);
+
+
+            })
+            $(".home").click(function(){
+                var name = $("#name").val();
+                var number = $("#phone").val();
+
+
+            })
         });
-
-
     });
-
 });
