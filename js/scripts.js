@@ -158,17 +158,14 @@ $(document).ready(function () {
             '</div>' +
             '<div class="form-group">' +
             '<div class="row">' +
-            '<div class="col-4">' +
+            '<div class="col-6">' +
             '<button class="btn btn-primary pick">Pick Up</button>' +
             '</div>' +
-            '<div class="col-4">' +
+            '<div class="col-6">' +
             '<button class="btn btn-primary home' +
             ' data-toggle="modal"' +
             'data-toggle ="modal"' +
             'data-target=#modalContactForm">Home Delivery</button>' +
-            '</div>' +
-            '<div class="col-4">' +
-            '<button class="btn btn-danger exit">Exit</button>' +
             '</div>' +
             '</div>' +
             '</div>' +
@@ -178,7 +175,7 @@ $(document).ready(function () {
         // $("#billAmount").append(pizza.getSubTotal())
         // $("#bill").slideDown(3000);
         $(".show").slideDown(2000);
-       
+
 
         $(".pick").click(function () {
             var typeSelected = $("#type").val();
@@ -186,7 +183,7 @@ $(document).ready(function () {
             var toppingSelected = $("#topping").val();
             var crustSelected = $("#crust").val();
             var pizza = new Pizza(typeSelected, sizeSelected, toppingSelected, crustSelected);
-            var name= $("#namee").val();
+            var name = $("#namee").val();
             var number = $("#phone").val();
 
             $("#billAmount").append("Hello " + name + " Thanks for Ordering with us. Your total orders is " + pizza.getSubTotal())
@@ -216,6 +213,9 @@ $(document).ready(function () {
                 var name = $("#namee").val();
                 var location = $("#location").val();
                 $('#totalBill').append("Hello " + name + " Thanks for Ordering with us. Your  total order is " + newTotal + " and would be delivered to " + location + " After one hour");
+                var newTotal = totalCost += 200;
+                var name = $("#namee").val("");
+                var location = $("#location").val("");
                 $("#deliverToLocation").slideDown(2000);
             })
 
