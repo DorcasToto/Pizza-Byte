@@ -141,12 +141,39 @@ $(document).ready(function () {
         );
         $("#table1").slideDown(2000);
     });
+    // $("#checkout").click(function () {
+    //     $(".checkoutShow").append('<div class="name">' +
+    //         '<div class="form-group">' +
+    //         '<label for="Full-name">Full name</label>' +
+    //         '<input type="text" class="form-control" id="namee">' +
+    //         '</div>' +
+    //         '<div class="form-group">' +
+    //         '<label for="phone-no">Phone Number</label>' +
+    //         '<input type="number" class="form-control" id="phone">' +
+    //         '</div>' +
+    //         '<div class="form-group">' +
+    //         '<div class="row">' +
+    //         '<div class="col-6">' +
+    //         '<button class="btn btn-primary pick">Pick Up</button>' +
+    //         '</div>' +
+    //         '<div class="col-6">' +
+    //         '<button class="btn btn-primary home' +
+    //         ' data-toggle="modal"' +
+    //         'data-toggle ="modal"' +
+    //         'data-target=#modalContactForm">Home Delivery</button>' +
+    //         '</div>' +
+    //         '</div>' +
+    //         '</div>' +
+    //         '</div>' +
+    //         '<div class = "deliverrrr">' +
+    //         '</div>');
+    //     $('#checkout').prop("disabled", true);
 
-    $("#checkout").click(function (e) {
-        $('#checkout').attr("disabled", true);
-        e.preventDefault();
-        //$('#checkout').attr("disabled", true);
-        $("#billAmount").empty();
+    // });
+
+    $("#checkout").click(function () {
+        $('#checkout').prop("disabled", true);
+
         $(".checkoutShow").append('<div class="name">' +
             '<div class="form-group">' +
             '<label for="Full-name">Full name</label>' +
@@ -172,6 +199,9 @@ $(document).ready(function () {
             '</div>' +
             '<div class = "deliverrrr">' +
             '</div>');
+
+        //$('#checkout').attr("disabled", true);
+        //$("#billAmount").empty();
         // $("#billAmount").append(pizza.getSubTotal())
         // $("#bill").slideDown(3000);
         $(".show").slideDown(2000);
@@ -208,7 +238,7 @@ $(document).ready(function () {
             $("#homeDeliver").slideDown(2000);
             $('#home-continue').click(function (e) {
                 e.preventDefault();
-
+                $('#home-continue').prop("disabled", true);
                 var newTotal = totalCost += 200;
                 var name = $("#namee").val();
                 var location = $("#location").val();
