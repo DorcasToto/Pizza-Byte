@@ -4,6 +4,8 @@ $(document).ready(function () {
     $("#bill").hide();
     $("#homeDeliver").hide();
     $(".show").hide();
+    $("#deliverToLocation").hide();
+
 
     var totalCost = 0;
     var pizzaOrdered = [];
@@ -137,57 +139,87 @@ $(document).ready(function () {
             "</td>" +
             "</tr>"
         );
-        $("#table1").slideDown(3000);
+        $("#table1").slideDown(2000);
+    });
 
-        $("#checkout").click(function (e) {
-            e.preventDefault();
-            $("#checkout").prop("disabled", false);
-            $("#billAmount").empty();
-            $(".show").append('<div class="name">' +
+    $("#checkout").click(function (e) {
+        e.preventDefault();
+        $("#checkout").prop("disabled", false);
+        $("#billAmount").empty();
+        $(".checkoutShow").append('<div class="name">' +
+            '<div class="form-group">' +
+            '<label for="Full-name">Full name</label>' +
+            '<input type="text" class="form-control" id="namee">' +
+            '</div>' +
+            '<div class="form-group">' +
+            '<label for="phone-no">Phone Number</label>' +
+            '<input type="number" class="form-control" id="phone">' +
+            '</div>' +
+            '<div class="form-group">' +
+            '<div class="row">' +
+            '<div class="col-4">' +
+            '<button class="btn btn-primary pick">Pick Up</button>' +
+            '</div>' +
+            '<div class="col-4">' +
+            '<button class="btn btn-primary home' +
+            ' data-toggle="modal"' +
+            'data-toggle ="modal"' +
+            'data-target=#modalContactForm">Home Delivery</button>' +
+            '</div>' +
+            '<div class="col-4">' +
+            '<button class="btn btn-danger exit">Exit</button>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '<div class = "deliverrrr">' +
+            '</div>');
+        // $("#billAmount").append(pizza.getSubTotal())
+        // $("#bill").slideDown(3000);
+        $(".show").slideDown(2000);
+        $("#checkout").prop("disabled", true);
+
+        $(".pick").click(function () {
+            var typeSelected = $("#type").val();
+            var sizeSelected = $("#size").val();
+            var toppingSelected = $("#topping").val();
+            var crustSelected = $("#crust").val();
+            var pizza = new Pizza(typeSelected, sizeSelected, toppingSelected, crustSelected);
+            var name= $("#namee").val();
+            var number = $("#phone").val();
+
+            $("#billAmount").append("Hello " + name + " Thanks for Ordering with us. Your total orders is " + pizza.getSubTotal())
+            $("#bill").slideDown(2000);
+
+        })
+        $(".home").click(function () {
+            $("#bill").hide();
+            $(".pick").hide();
+            $(".exit").hide();
+            $(".home").hide();
+
+
+            var name = $("#name").val();
+            var number = $("#phone").val();
+            $(".deliverrrr").append('<div class="location">' +
                 '<div class="form-group">' +
-                '<label for="Full-name">Full name</label>' +
-                '<input type="text" class="form-control" id="name">' +
-                '</div>' +
-                '<div class="form-group">' +
-                '<label for="phone-no">Phone Number</label>' +
-                '<input type="number" class="form-control" id="phone">' +
-                '</div>' +
-                '<div class="form-group">' +
-                '<div class="row">' +
-                '<div class="col-4">' +
-                '<button class="btn btn-primary pick">Pick Up</button>' +
-                '</div>' +
-                '<div class="col-4">' +
-                '<button class="btn btn-primary home' +
-                ' data-toggle="modal"' +
-                'data-toggle ="modal"'+
-                'data-target=#modalContactForm">Home Delivery</button>' +
-                '</div>' +
-                '<div class="col-4">' +
-                '<button class="btn btn-danger exit">Exit</button>' +
-                '</div>' +
-                '</div>' +
+                '<label for="location">Location</label>' +
+                '<input type="text" class="form-control" id="location">' +
                 '</div>' +
                 '</div>');
-            // $("#billAmount").append(pizza.getSubTotal())
-            // $("#bill").slideDown(3000);
-            $(".show").slideDown(3000);
-            $("#checkout").prop("disabled", false);
-            $(".pick").click(function () {
-                var name = $("#name").val();
-                var number = $("#phone").val();
+            $("#homeDeliver").slideDown(2000);
+            $('#home-continue').click(function (e) {
+                e.preventDefault();
 
-                $("#billAmount").append("Hello " + name + " Thanks for Ordering with us. Your total orders is " + pizza.getSubTotal())
-                $("#bill").slideDown(3000);
-
-
-            })
-            $(".home").click(function () {
-                var name = $("#name").val();
-                var number = $("#phone").val();
                 var newTotal = totalCost += 200;
-
+                var name = $("#name").val();
+                var location = $("#location").val();
+                $('#totalBill').append("Hello " + name + " Thanks for Ordering with us. Your  total order is " + newTotal + " and would be delivered to " + location + " After one hour");
+                $("#deliverToLocation").slideDown(2000);
             })
-        });
+
+
+        })
+
     });
 });
