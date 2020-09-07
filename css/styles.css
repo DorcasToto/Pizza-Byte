@@ -4,7 +4,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  font-family:sans-serif;
+  font-family: sans-serif;
 }
 
 #myCarousel {
@@ -55,16 +55,18 @@ html {
 }
 
 #link .nav-item .nav-link:hover {
-  color:teal; 
+  color: teal;
   font-weight: 500;
 }
 
 #fa {
-  color:white;
-  font-size:small;
+  color: white;
+  font-size: small;
 }
-h4{
-  color:teal;;
+
+h4 {
+  color: teal;
+  ;
 }
 
 
@@ -76,6 +78,17 @@ h4{
 .bg-transparent {
   background: transparent;
 }
-#billAmount{
+
+#billAmount {
   color: black;
+}
+/* 
+.col {
+  width: 80px;
+  height: 80px;
+  background-color: royalblue;
+} */
+.flex{
+  display: flex;
+  justify-content: space-evenly;
 }
