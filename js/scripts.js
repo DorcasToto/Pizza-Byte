@@ -143,8 +143,9 @@ $(document).ready(function () {
     });
 
     $("#checkout").click(function (e) {
+        $('#checkout').attr("disabled", true);
         e.preventDefault();
-        $("#checkout").prop("disabled", false);
+        //$('#checkout').attr("disabled", true);
         $("#billAmount").empty();
         $(".checkoutShow").append('<div class="name">' +
             '<div class="form-group">' +
@@ -177,7 +178,7 @@ $(document).ready(function () {
         // $("#billAmount").append(pizza.getSubTotal())
         // $("#bill").slideDown(3000);
         $(".show").slideDown(2000);
-        $("#checkout").prop("disabled", true);
+       
 
         $(".pick").click(function () {
             var typeSelected = $("#type").val();
@@ -212,7 +213,7 @@ $(document).ready(function () {
                 e.preventDefault();
 
                 var newTotal = totalCost += 200;
-                var name = $("#name").val();
+                var name = $("#namee").val();
                 var location = $("#location").val();
                 $('#totalBill').append("Hello " + name + " Thanks for Ordering with us. Your  total order is " + newTotal + " and would be delivered to " + location + " After one hour");
                 $("#deliverToLocation").slideDown(2000);
