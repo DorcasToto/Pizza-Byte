@@ -1,8 +1,5 @@
 
-# Pizza-Byte
-<table>
-<tr>
-<td>
+
   a web application used to order different sizes of pizzas with one or more toppings.  
 </td>
 </tr>
