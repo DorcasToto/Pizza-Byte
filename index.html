@@ -22,31 +22,31 @@
 
 <body>
     <div class="">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow fixed-top">
-            <a class="navbar-brand" href="#">PizzaByte</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-white shadow fixed-top">
+            <a class="navbar-brand" href="images/logo" id="logo">PizzaByte</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
                 aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="">
+            <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto" id="link">
                     <li class="nav-item active">
-                        <a class="nav-link " href="#"><i class="fas fa-home" id="fa"></i>Home
+                        <a class="nav-link " href="#home"><i class="fas fa-home"></i>Home
                             <span class="sr-only"></span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-pen" id="fa"></i>AboutUs</a>
+                        <a class="nav-link" href="#aboutus"><i class="fas fa-pen"></i>AboutUs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#"><i class="fas fa-pizza-slice" id="fa"></i>Order</a>
+                        <a class="nav-link " href="#order"><i class="fas fa-pizza-slice"></i>Order</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-pizza-slice" id="fa"></i>Contact</a>
+                        <a class="nav-link" href="#contact"><i class="fas fa-pizza-slice"></i>Contact</a>
                     </li>
             </div>
         </nav>
-        <div class="home">
+        <div class="home" id="home">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active ad1">
@@ -75,8 +75,8 @@
                 </a>
             </div>
         </div>
-
-        <div class="aboutUs">
+ 
+        <div class="aboutUs" id="aboutus">
             <div class="card h-100">
                 <div class="card-body text-center">
                     <h4><strong>Abouts Us</strong></h4>
@@ -163,7 +163,7 @@
                 </div>
 
             </div>
-            <div class="container">
+            <div class="container" id="order">
                 <div class="row">
                     <div class="col-sm mt-3">
                         <div class="card">
@@ -353,7 +353,8 @@
         </div>
     </div>
 
-    <footer class="page-footer font-small blue-grey darken-1 m-3">
+
+    <footer class="page-footer font-small blue-grey darken-1 m-3" id="contact">
 
         <div class="container">
             <div class="row">
@@ -384,7 +385,7 @@
 
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
             <a href="">PizzaByte</a></br>
-            <a href="portfolio.html" class="h3">Flex-box</a>
+            <a href="portfolio.html" class="h3">Portfolio(flex)</a>
         </div>
 
     </footer>

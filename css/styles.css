@@ -48,19 +48,15 @@ html {
   font-size: 20px;
 }
 
-#link .nav-item .nav-link {
-  color: rgb(209, 180, 13);
-  font-weight: 500;
-  font-size: 25px;
-}
-
 #link .nav-item .nav-link:hover {
   color: teal;
   font-weight: 500;
 }
-
-#fa {
-  color: white;
+#link .nav-item .nav-link,.navbar-brand{
+   color:black;
+   font-size: 20px;
+}
+#link .nav-item .nav-link i{
   font-size: small;
 }
 
@@ -68,7 +64,9 @@ h4 {
   color: teal;
   ;
 }
-
+#logo{
+  color: black;
+}
 
 .navbar {
   -webkit-transition: all .3s ease 0s;
@@ -91,4 +89,30 @@ h4 {
 .flex{
   display: flex;
   justify-content: space-evenly;
+}
+.contact{
+  display: flex;
+}
+.aboutMe{
+  display:flex;
+  justify-content: space-between;
+}
+.aboutMe,.skills,.projects,.contact,.hobbies{
+  border: 2px solid transparent;
+  box-shadow: 5px 10px goldenrod;
+}
+h2{
+  font-size:30px;
+  font-weight: 700;
+}
+h1{
+  font-size:40px;
+}
+#car{
+  height:700px;
+}
+tbody>tr>td{
+  color: rgb(43, 42, 42);
+  font-size:18px;
+  font-weight: 500;
 }
