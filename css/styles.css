@@ -111,3 +111,8 @@ h1{
 #car{
   height:700px;
 }
+tbody>tr>td{
+  color: rgb(43, 42, 42);
+  font-size:18px;
+  font-weight: 500;
+}
